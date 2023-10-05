@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width"> 
+<title>Access Denied</title>
+
+<style>
+html { 
+  background: url(/en/Custom/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+	font-family: Calibri, Arial, Helvetica, sans-serif; color: #ffffff; font-size: 18px;	
+}
+.blackback{
+	margin-top:30px;
+	background-color:rgba(0,0,0,0.3);
+	color:white;
+	padding:20px;
+	border-radius:20px;
+}
+a:link,a:visited,a:hover{color:#ffffff;}
+</style>
+<script type="text/javascript">
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+window.onload = function(){
+     var action = getParameterByName("action");
+     var cat = getParameterByName("cat");
+     var kind = getParameterByName("kind");
+     var reason = getParameterByName("reason");
+     var reasoncode = getParameterByName("reasoncode");
+     var referer = getParameterByName("referer");
+     var rule = getParameterByName("rule");
+     var timebound = getParameterByName("timebound");
+     var url = getParameterByName("url");
+     var user = getParameterByName("user");
+     var zsq = getParameterByName("zsq");
+
+                
+                 
+                 document.getElementById("url").innerHTML = url;
+				 document.getElementById("cat").innerHTML = cat;
+     //alert(week1+"   "+week2);
+};
+
+</script>
+</head>
+
+<body>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td><img src="/en/Custom/logo.png"></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="20" class="blackback">
+				<tbody>
+					<tr>
+						<td><h1>Access Denied</h1>
+							<p><img src="/en/Custom/access-denied.png" align="left" width="200" style="margin-right:20px;margin-bottom:20px"></p>
+							
+							<p>You are about to access the Internet from a location within the Dubai Holding Network.
+							<br>
+							Kindly note that internet usage is monitored.</p>
+							
+							<p>The requested website is <strong><span id="url"></span></strong></p>
+					
+							<p>Website category is <strong><span id="cat"></span></strong></p>
+							<br>You have been denied access to this site because the content of this site does not serve any business need of Company as per the site identification. 
+							Kindly note that Company is obliged to limit the internet for its business purpose only; As a result, the disruption in any service which utilizes the internet will be minimized. 
+							<br>We thank you for your cooperation and understanding.</P>
+							<p>If you believe the website you are trying to access is for a business purpose, please click <a href="https://esd.dubaiholding.com/saw/ess/offeringPage/324139?AUTH=SAML&TENANTID=846719692" target="_blank">Enterprise Service Desk</a> and tell us the purpose or call us on the below numbers: 
+<br>
+UAE: 80077000
+<br>
+Outside UAE : +971-43647730 </span></p>
+							<p>&nbsp;</p></td>
+						</tr>
+				</tbody>
+			</table></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
